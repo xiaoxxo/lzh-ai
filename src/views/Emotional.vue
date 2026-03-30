@@ -1,6 +1,6 @@
 <template>  
   <div>
-    <Pagehead title="情感分析"/>
+    <PageHead title="情感分析"/>
     <TableSeach :formItem="formItem" @search="handleSearch"/>
     <el-table :data="tableData" style="width: 100%">
       <el-table-column prop="id" label="用户ID" width="80"/>
@@ -127,7 +127,7 @@
   </div>
 </template>
 <script setup>
-  import Pagehead from '@/components/Pagehead.vue'
+  import PageHead from '@/components/PageHead.vue'
   import TableSeach from '@/components/TableSeach.vue'
   import { reactive ,ref ,onMounted} from 'vue'
   import { getEmotionalPage } from '@/api/admin'

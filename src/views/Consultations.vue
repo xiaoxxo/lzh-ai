@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Pagehead title="咨询记录"/>
+    <PageHead title="咨询记录"/>
     <el-table :data="tableData" style="width: 100%">
       <el-table-column prop="userNickname" label="会话ID" width="100">
         <template #default="scope">
@@ -74,7 +74,7 @@
 <script setup>
   import { onMounted, ref, reactive } from 'vue'
   import {getConsultionPage,getSessionDetail} from '@/api/admin'
-  import Pagehead from '@/components/Pagehead.vue'
+  import PageHead from '@/components/PageHead.vue'
   const tableData=ref([])
   const pagination=reactive({
     currentPage:1,
