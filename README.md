@@ -57,7 +57,3 @@ npm run preview
 
 项目包含了 `vercel.json` 配置文件，支持一键部署到 [Vercel](https://vercel.com/)。
 只需将本仓库导入到 Vercel 控制台即可自动完成构建和发布。
-
-## 📄 协议
-
-[MIT License](./LICENSE) (或根据你的实际情况修改)
