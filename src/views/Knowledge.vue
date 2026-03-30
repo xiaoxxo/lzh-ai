@@ -1,10 +1,10 @@
 <template>  
   <div>
-    <Pagehead title="知识文章">
+    <PageHead title="知识文章">
       <template #buttons>
         <el-button @click="handleEdit({})" type="primary">新增</el-button>
       </template>
-    </Pagehead>
+    </PageHead>
     <TableSeach :formItem="forItem" @search="handleSearch"></TableSeach>
     <el-table :data="tableData" style="width:100% ; margin-top:25px">
       <el-table-column label="文章标题" width="200" fixed="left">
@@ -44,7 +44,7 @@
   </div>
 </template>
 <script setup>
-  import PageHead from '@/components/Pagehead.vue'
+  import PageHead from '@/components/PageHead.vue'
   import TableSeach from '@/components/TableSeach.vue'
   import {categoryTree,articlePage,knowledgeArticle,changeArticleStatus,deleteArticle} from '@/api/admin'
   import {onMounted,ref,reactive} from 'vue'
