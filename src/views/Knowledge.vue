@@ -44,7 +44,7 @@
   </div>
 </template>
 <script setup>
-  import Pagehead from '@/components/Pagehead.vue'
+  import PageHead from '@/components/Pagehead.vue'
   import TableSeach from '@/components/TableSeach.vue'
   import {categoryTree,articlePage,knowledgeArticle,changeArticleStatus,deleteArticle} from '@/api/admin'
   import {onMounted,ref,reactive} from 'vue'
